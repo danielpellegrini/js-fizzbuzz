@@ -14,6 +14,16 @@ Consigli del giorno:
 
 // print the whole numbers
 
+var numbers = [];
+
+for(var n = 1; n <= 100; n++) {
+    numbers.push(n);
+}
+
+for(var index = 0; index < numbers.length; index++) {
+    console.log(numbers[index]);
+}
+
 // define multiples
 
 // assign word the correct multiple
