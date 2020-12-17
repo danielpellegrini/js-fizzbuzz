@@ -12,18 +12,20 @@ Consigli del giorno:
 2. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano" */
 
 
-// print the whole numbers
-
-var numbers = [];
-
-for(var n = 1; n <= 100; n++) {
-    numbers.push(n);
-}
-
-for(var index = 0; index < numbers.length; index++) {
-    console.log(numbers[index]);
-}
-
-// define multiples
 
 // assign word the correct multiple
+
+for (var i = 1; i <=100; i++) { // print the numbers list
+  if (i%5 === 0 && i%3 === 0) {
+    console.log('FizzBuzz'); // assign word the correct multiple
+
+  } else if (i%3 === 0) { // define multiples
+    console.log('Fizz'); // assign word the correct multiple
+
+  } else if (i%5 === 0) { // define multiples
+    console.log('Buzz'); // assign word the correct multiple
+
+  } else {
+    console.log(i); // print the numbers list
+  }
+}
